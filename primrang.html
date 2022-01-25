@@ -1,0 +1,32 @@
+<html>
+<body>
+<script>
+var x,y,i,c=0;
+x=parseInt(prompt("Enter the 1st limit:"));
+y=parseInt(prompt("Enter the 2nd limit:"));
+document.write("The prime numbers are:<br>");
+while(x<=y)
+{
+	c=0;
+	for(i=1;i<=x;i++)
+	{
+
+		if(x%i==0)
+		{	
+			c=c+1;
+		}
+	}
+	if(c==2)
+	{
+		document.write(x,"<br>");
+
+	}
+	x=x+1;
+}
+</script>
+</body>
+</html>
+
+
+		
+	
