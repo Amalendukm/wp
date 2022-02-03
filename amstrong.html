@@ -1,0 +1,23 @@
+<html>
+<body>
+<script>
+n=parseInt(prompt("Enter the number:"));
+sum=l=0;
+temp=n;
+while(n>0)
+{
+	l=n%10;
+	sum=sum+(l**3);
+	n=Math.floor(n/10);
+}
+if(temp==sum)
+{
+	document.write(temp+ " is an Amstrong Number ");
+}
+else
+{
+	document.write(temp+ " Not an Amstrong Number ");
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+function replace()
+{
+	document.getElementById('MyImage').src='img1.jpg';
+}
+function back()
+{
+	document.getElementById('MyImage').src='img.jpg';
+}
+</script>
+</head>
+<body align="center" style="background-color:"blue">
+<h1>Swapping image with javascript</h1>
+<br>
+<img id="MyImage"src="img1.jpg" style="width:600px;height:600px" alt="img"/>
+<br>
+<br>
+<button onclick="replace()">Replace</button>
+<button onclick="back()">Back</button>
