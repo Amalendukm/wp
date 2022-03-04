@@ -1,0 +1,50 @@
+<html>
+<head>
+<script>
+function validate()
+{
+	if(document.myform.name.value==" ")
+	{
+		alert=("Please provide your name!");
+		document.myform.Name.focus();
+		return false;
+	}
+	if(document.myform.email.value==" ")
+	{
+		alert("Please provide your email!");
+		document.myform.Email.focus();
+		return false;
+	}
+	if(document.myform.zip.value=="||isNaN(document.myform.Zip.value)||document.myform.Zip.value.length!=6)
+	{
+		alert("Please provide a Zip");
+		document.myform.Zip.focus();
+		return false;
+	}
+	if(document.myform.country.value=="-1")
+	{
+		alert("Please provide your country!");
+		return true;
+	}
+	return true;
+}
+</script>
+</head>
+<body align="center">
+<form name="myform" on submit="return(validate())";
+<br><br>
+<label>Name:</label>
+<input type="text" name="name" size="15">
+<br><br>
+<label>zip code</label>
+<input type="text" id="email" size="15" name="email">
+<br><br>
+<label>Country</label>
+<select name="country"><option value="-1">Country</option>
+<option value="1">USA</option>
+<option value="2">INDIA</option>
+<br><br>
+<input type="button" value="submit">
+</form>
+</body>
+</html>
